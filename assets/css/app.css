@@ -596,10 +596,17 @@ section {
 
 .sliderScroll button {
     padding: 16px 60px;
-    display: block;
+    display: flex;
+    gap: 10px;
     width: max-content;
     margin: 0 auto;
 }
+@media(max-width: 768px) {
+    .sliderScroll button {
+        padding: 16px;
+    }
+}
+
 .ventajas {
 }
 .ventajas__content {
