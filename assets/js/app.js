@@ -35,22 +35,23 @@ $(document).ready(function() {
         }
     });
     if ($(window).width() > 767) {
-        // Добавляем обработчик события с опцией passive: false
         track.on('mousewheel', '.owl-stage', { passive: false }, function (e) {
-            // Определяем направление прокрутки
             if (e.originalEvent.deltaY > 0) {
                 track.trigger('next.owl.carousel');
             } else {
                 track.trigger('prev.owl.carousel');
             }
-            // Предотвращаем стандартное поведение
             e.preventDefault();
         });
     }
     
 
 
-
+    $(".pagination__item a").on("click", function(e) {
+        e.preventDefault();
+        $(".pagination__item").removeClass("active");
+        $(this).parent().addClass("active");
+    })
 
 
 
