@@ -22,16 +22,32 @@ $(document).ready(function() {
         nav:false,
         dots:false,
         margin:10,
-        items:3
-    });
-    track.on('mousewheel', '.owl-stage', function (e) {
-        if (e.deltaY>0) {
-            track.trigger('next.owl');
-        } else {
-            track.trigger('prev.owl');
+        responsive:{
+            0:{
+                items:1
+            },
+            768:{
+                items:2
+            },            
+            960:{
+                items:3
+            }
         }
-        e.preventDefault();
     });
+    if ($(window).width() > 767) {
+        // Добавляем обработчик события с опцией passive: false
+        track.on('mousewheel', '.owl-stage', { passive: false }, function (e) {
+            // Определяем направление прокрутки
+            if (e.originalEvent.deltaY > 0) {
+                track.trigger('next.owl.carousel');
+            } else {
+                track.trigger('prev.owl.carousel');
+            }
+            // Предотвращаем стандартное поведение
+            e.preventDefault();
+        });
+    }
+    
 
 
 
