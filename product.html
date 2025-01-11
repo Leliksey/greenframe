@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/open-props/open-props.min.css">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/app.css">
@@ -41,6 +43,79 @@
             </div>
         </div>
     </header>
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="breadcrumbs__content">
+                <a href="#" class="breadcrumbs__back">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M14.04 7.29343C14.2273 7.48093 14.3325 7.7351 14.3325 8.0001C14.3325 8.2651 14.2273 8.51926 14.04 8.70676L7.74668 15.0001H26.6667C26.9319 15.0001 27.1863 15.1055 27.3738 15.293C27.5613 15.4805 27.6667 15.7349 27.6667 16.0001C27.6667 16.2653 27.5613 16.5197 27.3738 16.7072C27.1863 16.8947 26.9319 17.0001 26.6667 17.0001H7.74668L14.04 23.2934C14.1383 23.385 14.2171 23.4954 14.2717 23.618C14.3264 23.7407 14.3558 23.8731 14.3581 24.0074C14.3605 24.1417 14.3358 24.275 14.2855 24.3996C14.2352 24.5241 14.1604 24.6372 14.0654 24.7321C13.9704 24.8271 13.8573 24.902 13.7328 24.9523C13.6083 25.0026 13.4749 25.0273 13.3407 25.0249C13.2064 25.0225 13.074 24.9931 12.9513 24.9385C12.8286 24.8838 12.7182 24.805 12.6267 24.7068L4.62668 16.7068C4.43941 16.5193 4.33423 16.2651 4.33423 16.0001C4.33423 15.7351 4.43941 15.4809 4.62668 15.2934L12.6267 7.29343C12.8142 7.10616 13.0683 7.00098 13.3333 7.00098C13.5983 7.00098 13.8525 7.10616 14.04 7.29343Z" fill="#393939"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <section class="product">
+        <div class="container">
+            <h2>Bosque silencioso</h2>
+            <div class="product__content">
+                <div class="product__main-slider">
+                    <img src="assets/img/product_img_1.png" alt="">
+                    <img src="assets/img/product_img_2.png" alt="">
+                    <img src="assets/img/product_img_3.png" alt="">
+                    <img src="assets/img/product_img_4.png" alt="">
+                    <img src="assets/img/product_img_5.png" alt="">
+                </div>
+                <div class="product__nav-slider">
+                    <img src="assets/img/product_img_1.png" alt="">
+                    <img src="assets/img/product_img_2.png" alt="">
+                    <img src="assets/img/product_img_3.png" alt="">
+                    <img src="assets/img/product_img_4.png" alt="">
+                    <img src="assets/img/product_img_5.png" alt="">
+                </div>
+            </div>
+            <div class="product__info">
+                <div class="product__info-left">
+                    <div class="product__price">185 000€</div>
+                    <div class="product__location">
+                        <img src="assets/img/icon_location.svg" alt="location">
+                        <span class="text_medium">Madrid, Carolinas Bajas 12, 03480</span>
+                    </div>
+                </div>
+                <button class="button button_colored">Contacto</button>
+            </div>
+        </div>
+    </section>
+    <section class="detalles">
+        <div class="container">
+            <div class="text_medium">Detalles de la casa</div>
+            <div class="detalles__content">
+                <div class="detalles__item">
+                    <img src="assets/img/house.svg" alt="house">
+                    <span class="text">210 m²</span>
+                </div>
+                <div class="detalles__item">
+                    <img src="assets/img/floor.svg" alt="floor">
+                    <span class="text">2 plantas</span>
+                </div>
+                <div class="detalles__item">
+                    <img src="assets/img/parking.svg" alt="parking">
+                    <span class="text">2 dormitorios</span>
+                </div>
+                <div class="detalles__item">
+                    <img src="assets/img/bath.svg" alt="bath">
+                    <span class="text">2 baños</span>
+                </div>
+                <div class="detalles__item">
+                    <img src="assets/img/terassa.svg" alt="terassa">
+                    <span class="text">Terassa</span>
+                </div>
+                <div class="detalles__item">
+                    <img src="assets/img/salon.svg" alt="salon">
+                    <span class="text">Salon 40 m²</span>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="información">
         <div class="container">
             <div class="text_medium">Información sobre el medio ambiente</div>
@@ -319,6 +394,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 </html>

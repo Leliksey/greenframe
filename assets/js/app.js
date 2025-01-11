@@ -55,4 +55,37 @@ $(document).ready(function() {
 
 
 
+
+    $('.product__main-slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: false,
+        fade: true,
+        // adaptiveHeight: true,
+        asNavFor: '.product__nav-slider'
+      });
+      $('.product__nav-slider').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        asNavFor: '.product__main-slider',
+        dots: false,
+        arrows: false,
+        centerMode: false,
+        focusOnSelect: true,
+        // adaptiveHeight: true
+      });
+
+      var product_nav_slider = $(".product__nav-slider")
+      if ($(window).width() > 767) {
+        product_nav_slider.on('mousewheel', function (e) {
+            if (e.originalEvent.deltaY > 0) {
+                product_nav_slider.slick('slickNext');
+            } else {
+                product_nav_slider.slick('slickPrev');
+            }
+            e.preventDefault();
+        });
+    }
+
 });
