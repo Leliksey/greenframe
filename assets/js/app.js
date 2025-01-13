@@ -88,4 +88,13 @@ $(document).ready(function() {
         });
     }
 
+
+    $(".ejemplos .card__img").owlCarousel({
+        loop:true,
+        nav:true,
+        dots:false,
+        margin:10,
+        items:1
+      });
+
 });
